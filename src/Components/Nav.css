@@ -1,0 +1,38 @@
+
+.nav {
+    background: var(--accent-color);
+    box-sizing: border-box;
+    height: 155px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    margin-left: 10%
+}
+
+.nav .links {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 10%;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 632px) {
+
+    .nav {
+        height: 120px;
+        padding: 0;
+    }
+    img {
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+}
