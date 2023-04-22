@@ -5,7 +5,7 @@ const Contact = () => {
 
     return (
         <div className="main">
-            Hello from Contact!
+            <span>Find me on GitHub <a href="https://github.com/jelewe">@jelewe</a></span>
         </div>
     )
 

@@ -32,6 +32,13 @@ h2 {
   font-weight: 300;
 }
 
+.portrait {
+  height: 400px;
+}
+
+span a {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 632px) {
 
