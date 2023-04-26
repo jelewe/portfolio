@@ -1,4 +1,4 @@
-import img from '../imgs/mepor.JPG'
+import img from '../imgs/mepor.jpg'
 
 const About = () => {
 
