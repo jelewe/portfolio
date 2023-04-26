@@ -23,17 +23,18 @@ h2 {
 }
 
 .intro {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .obj {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .portrait {
   height: 400px;
+  border-radius: 10px;
 }
 
 span a {
