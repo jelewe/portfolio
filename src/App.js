@@ -44,37 +44,3 @@ function App() {
 
 export default App;
 
-
-/*      <HashRouter>
-        <Routes>
-          <Route element= {<Layout />}>
-            <Route path ="/" index element= {<Portfolio />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            </Route>
-        </Routes>
-      </HashRouter>
-      */
-
-      /*
-      [
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
-        {
-          index: true,
-          path: 'portfolio',
-          element: <Portfolio />
-        },
-        {
-          path: 'about',
-          element: <About />
-        },
-        {
-          path: 'contact',
-          element: <Contact />
-        }
-      ]
-    }
-  ]*/
