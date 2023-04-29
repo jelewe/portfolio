@@ -2,8 +2,11 @@ import './Projects.css'
 import i1 from '../imgs/image1.jpg'
 import i2 from '../imgs/image2.jpg'
 import i3 from '../imgs/tasks.jpg'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
+
+
 
     const projectArr = [
         {
@@ -29,18 +32,43 @@ const Projects = () => {
         }
     ]
 
+
     return (
-        <div className='projectContainer'>
-        {projectArr.map(proj => (
-            <div key={proj.id} id= {proj.id} className="projectDiv">
-                <img src= {proj.img} alt= {proj.title}></img>
-                <div className="projText">
-                    <a href={proj.link}><h3>{proj.title}</h3></a>
-                    <span>{proj.notes}</span>
-                </div>
-            </div>
-        ))}
+
+        
+        <div className='projectContainer'
+                initial="hidden"
+                animate="show"
+                >
+            {projectArr.map((proj, i) => (
+                <motion.div key={proj.id} 
+                                    id= {proj.id} 
+                                    className="projectDiv"
+                                    initial={ {
+                                        opacity: 0, 
+                                        translateX: i % 2 === 0 ? -500  : 500,
+                                        } }
+                                    animate={ {
+                                        opacity: 1, 
+                                        translateX: 0 
+                                        } }
+                                    transition= { { 
+                                        duration: 0.7, 
+                                        delay: i * 0.3,
+                                        ease: "easeInOut"
+                                        } }
+                                    >
+                    <img src= {proj.img} 
+                            alt= {proj.title}
+                            />
+                    <div className="projText">
+                        <a href={proj.link}><h3>{proj.title}</h3></a>
+                        <span>{proj.notes}</span>
+                    </div>
+                </motion.div>
+            ))}
         </div>
+
 
     )
 }

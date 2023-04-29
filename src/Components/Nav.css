@@ -2,7 +2,7 @@
 .nav {
     background: var(--accent-color);
     box-sizing: border-box;
-    height: 155px;
+    height: 125px;
     padding-left: 8%;
     padding-right: 8%;
     display: flex;

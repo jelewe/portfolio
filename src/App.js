@@ -1,42 +1,20 @@
 import './App.css';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
-import Portfolio from './Pages/Portfolio';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import Nav from './Components/Nav';
+import AnimatedRoutes from './Components/AnimatedRoutes';
 
 function App() {
-
-  const router = createHashRouter(
-    [
-      {
-        path: '/',
-        element: <>
-          <Nav />
-          <Outlet />
-        </>,
-        children: [
-          {
-            path: '/',
-            element: <Portfolio />
-          },
-          {
-            path: '/about',
-            element: <About />
-          },
-          {
-            path: '/contact',
-            element: <Contact />
-          }
-        ]
-      }
-    ]
-  )
   
   return (
+    <div className='App'>
+      <Router>
+        <Nav />
+        <AnimatedRoutes />
+      </Router>
+    </div>
 
-    <RouterProvider router={router} />
+    
 
 
   );
