@@ -1,3 +1,10 @@
+code {
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: rgb(252, 227, 138, 0.22);
+    border-radius: 5px;
+}
+
 .projectContainer {
     background: var(--main-color);
 }
@@ -27,6 +34,10 @@
 
 .projectDiv img {
     width: 450px;
+}
+
+.projectDiv img:hover {
+    cursor: pointer;
 }
 
 .projectDiv h3 {
