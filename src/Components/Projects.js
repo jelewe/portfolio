@@ -1,7 +1,7 @@
 import './Projects.css'
 import i1 from '../imgs/image1.jpg'
 import i2 from '../imgs/image2.jpg'
-import i3 from '../imgs/tasks.jpg'
+import i3 from '../imgs/task.jpg'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
@@ -14,7 +14,7 @@ const Projects = () => {
             img: i1,
             title: 'eCommerce Site',
             link: 'https://jelewe.github.io/react-shopping-cart/',
-            notes: <span>Web Design concept for a furniture store. Developed using functional <code>React.js</code> components, hooks, <code>Bootstrap</code>, <code>HTML</code>, and <code>CSS</code>. A third party API was implemented to generate product list. Design focus was accessibility and efficiency.</span>
+            notes: <span>Web Design concept for an eCommerce store. Developed using functional <code>React.js</code> components, hooks, <code>Bootstrap</code>, <code>HTML</code>, and <code>CSS</code>. A third party API was implemented to generate product images, names, and descriptions. Design focus was accessibility and efficiency.</span>
         },
         {
             id: 2,

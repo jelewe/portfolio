@@ -3,6 +3,7 @@ code {
     font-weight: 600;
     background-color: rgb(252, 227, 138, 0.22);
     border-radius: 5px;
+    padding: 0.2rem;
 }
 
 .projectContainer {

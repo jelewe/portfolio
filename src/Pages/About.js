@@ -21,7 +21,7 @@ const About = () => {
                                 alt ="woman doing a handstand in front of the ocean" 
                                 initial={ {
                                         opacity: 0, 
-                                        translateY:  -500 
+                                        translateY:  -70 
                                         } }
                                     animate={ {
                                         opacity: 1, 

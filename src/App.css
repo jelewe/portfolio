@@ -42,6 +42,14 @@ h2 {
   vertical-align: middle;
 }
 
+.contactItem {
+  line-height: 2rem;
+}
+
+.line {
+  stroke-width: 2;
+}
+
 span {
   line-height: 1.5;
 }
