@@ -1,7 +1,10 @@
 import './Projects.css'
 import i1 from '../imgs/image1.jpg'
+import i1wp from '../imgs/image1WP.webp'
 import i2 from '../imgs/image2.jpg'
+import i2wp from '../imgs/image2WP.webp'
 import i3 from '../imgs/task.jpg'
+import i3wp from '../imgs/taskWP.webp'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
@@ -12,6 +15,7 @@ const Projects = () => {
         {
             id: 1,
             img: i1,
+            wp: i1wp,
             title: 'eCommerce Site',
             link: 'https://jelewe.github.io/react-shopping-cart/',
             notes: <span>Web Design concept for an eCommerce store. Developed using functional <code>React.js</code> components, hooks, <code>Bootstrap</code>, <code>HTML</code>, and <code>CSS</code>. A third party API was implemented to generate product images, names, and descriptions. Design focus was accessibility and efficiency.</span>
@@ -19,6 +23,7 @@ const Projects = () => {
         {
             id: 2,
             img: i2,
+            wp: i2wp,
             title: 'Weather Now',
             link: 'https://jelewe.github.io/weather-app/',
             notes: <span>Web App developed using vanilla <code>JavaScript</code>, <code>HTML</code>, and <code>CSS</code>. Open Weather API was implemented to fetch real-time data based on user input. Design focus was accessibility and simplicity.</span>
@@ -26,6 +31,7 @@ const Projects = () => {
         {
             id: 3,
             img: i3,
+            wp: i3wp,
             title: 'To Do Tracker',
             link: 'https://jelewe.github.io/todo-app/',
             notes: <span>Web App developed using vanilla <code>JavaScript</code>, <code>HTML</code>, and <code>CSS</code>. Implemented local storage for task continuity across user sessions. Design focus was on accessibility and solidifying core JavaScript fundamentals.</span>
@@ -59,9 +65,14 @@ const Projects = () => {
                                         } }
                                     >
                     <a href={proj.link}>
+                    <picture>
+                        <source srcSet= {proj.wp} type="image/webp" />
                         <img src= {proj.img} 
-                                alt=  {`Link to ${proj.title}`}
-                                />
+                                    alt=  {`Link to ${proj.title}`}
+                                    />
+
+                    </picture>
+                        
                     </a>
                     <div className="projText">
                         <a href={proj.link}><h3>{proj.title}</h3></a>

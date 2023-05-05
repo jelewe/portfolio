@@ -1,4 +1,5 @@
 import img from '../imgs/mepor.jpg'
+import imgWP from '../imgs/meporWP.webp'
 import { motion } from 'framer-motion'
 
 const About = () => {
@@ -16,10 +17,7 @@ const About = () => {
                                 filter: "blur(20px)"
                                 } }
             >
-            <motion.img src= {img} 
-                                className= "portrait" 
-                                alt ="woman doing a handstand in front of the ocean" 
-                                initial={ {
+            <motion.picture initial={ {
                                         opacity: 0, 
                                         translateY:  -70 
                                         } }
@@ -32,7 +30,10 @@ const About = () => {
                                         delay: 0.3,
                                         ease: "easeInOut"
                                         } }
-                                />
+                                >
+                                <source srcSet= {imgWP} type="image/webp" className= "portrait" />
+                                <img className= "portrait"  src= {img} alt ="woman doing a handstand in front of the ocean" />
+                </motion.picture>
             <br />
             <div className="mainText">
                 <h1>Hi, I'm Jessie!</h1>
