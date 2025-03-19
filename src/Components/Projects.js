@@ -18,7 +18,7 @@ const Projects = () => {
             wp: i1wp,
             title: 'eCommerce Site',
             link: 'https://jelewe.github.io/react-shopping-cart/',
-            notes: <span>Web Design concept for an eCommerce store. Developed using functional <code>React.js</code> components, hooks, <code>Bootstrap</code>, <code>HTML</code>, and <code>CSS</code>. A third party API was implemented to generate product images, names, and descriptions. Design focus was accessibility and efficiency.</span>
+            notes: <span>Web Design concept for an eCommerce store. Developed using functional React.js components, hooks, Bootstrap, HTML, and CSS. Implemented a third-party API to generate product images, names, and descriptions. Design focus was accessibility and efficiency.</span>
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ const Projects = () => {
             wp: i2wp,
             title: 'Weather Now',
             link: 'https://jelewe.github.io/weather-app/',
-            notes: <span>Web App developed using vanilla <code>JavaScript</code>, <code>HTML</code>, and <code>CSS</code>. Open Weather API was implemented to fetch real-time data based on user input. Design focus was accessibility and simplicity.</span>
+            notes: <span>Web App developed using vanilla JavaScript, HTML, and CSS. Open Weather API was implemented to fetch real-time data based on user input. Design focus was accessibility and simplicity.</span>
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ const Projects = () => {
             wp: i3wp,
             title: 'To Do Tracker',
             link: 'https://jelewe.github.io/todo-app/',
-            notes: <span>Web App developed using vanilla <code>JavaScript</code>, <code>HTML</code>, and <code>CSS</code>. Implemented local storage for task continuity across user sessions. Design focus was on accessibility and solidifying core JavaScript fundamentals.</span>
+            notes: <span>Web App developed using vanilla JavaScript, HTML, and CSS. Implemented local storage for task continuity across user sessions. Design focus was on accessibility and solidifying core JavaScript fundamentals.</span>
         }
     ]
 
@@ -75,7 +75,7 @@ const Projects = () => {
                         
                     </a>
                     <div className="projText">
-                        <a href={proj.link}><h3>{proj.title}</h3></a>
+                        <a href={proj.link} target="_blank" rel="noreferrer noopener"><h3>{proj.title}</h3></a>
                         <span>{proj.notes}</span>
                     </div>
                 </motion.div>

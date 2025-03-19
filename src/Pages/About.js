@@ -50,7 +50,7 @@ const About = () => {
                                         ease: "easeInOut"
                                         } }
                                         > 
-                    Frontend Developer & UX designer based in Honolulu, Hawaii
+                    <b>Frontend-focused Fullstack Developer based in Honolulu, Hawaii</b>
                     </motion.span>
                 <br />
                 <br />
@@ -67,7 +67,11 @@ const About = () => {
                                         ease: "easeInOut"
                                         } }
                                         >
-                I'm passionate about building responsive, user-friendly applications that are visually appealing and highly accessible across multiple platforms.
+                <span>A lifelong nerd who made solving puzzles her career! </span>
+                <br/>
+                I have production experience in Typescript, React, vanilla JavaScript ES6, Node.js, PHP. I've built and deployed custom components for enterprise-level clients. I'm also no stranger to CMS development, including Drupal, Umbraco, and WordPress. 
+                <br />
+                I'm interested in contributing to fully remote, autonomous, and fast-paced teams making big visions come to life!
                 </motion.span>
             </div>
         </motion.div>
