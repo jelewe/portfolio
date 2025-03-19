@@ -7,15 +7,21 @@ code {
 }
 
 .projectContainer {
-    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projectDiv {
+    background-color: var(--highlight-color);
     display: flex;
     justify-content: center;
     font-weight: 300;
     margin: 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px var(--accent-color);
 }
 
 .projectDiv:nth-child(even){
@@ -28,9 +34,14 @@ code {
     padding-right: 1rem;
 }
 
+.projectDiv:last-child {
+    margin-bottom: 4rem;
+}
+
 
 .projectDiv a {
     text-decoration: underline;
+    color: var(--accent-color);
 }
 
 .projectDiv img {
@@ -52,6 +63,7 @@ code {
     padding-left: 1rem;
     text-align: left;
     width: 400px;
+    color: var(--accent-color);
 }
 
 .projectDiv img {
@@ -65,7 +77,6 @@ code {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
     }
 
     .projectDiv:nth-child(even){
@@ -86,5 +97,11 @@ code {
         text-align: center;
         width: 80vw;
         padding: 0;
+    }
+}
+
+@media (min-width: 1090px) {
+    .projectDiv {
+        width: 60%;
     }
 }
